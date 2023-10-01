@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ScreenController">
+   <children>
+      <Group fx:id="groupESTUDANTE" visible="false">
+         <children>
+            <ImageView fx:id="backgroundESTUDANTE" fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundCadastroEstudante.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="textNome" alignment="CENTER" layoutX="179.0" layoutY="180.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu nome completo aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textNascimento" alignment="CENTER" layoutX="179.0" layoutY="220.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira sua data de nascimento aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textCPF" alignment="CENTER" layoutX="179.0" layoutY="261.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Informe seu CPF aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textEndereco" alignment="CENTER" layoutX="179.0" layoutY="302.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu endereço (Bairro, Rua, Nº)" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textTelefone" alignment="CENTER" layoutX="179.0" layoutY="343.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu número de telefone aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textEmail" alignment="CENTER" layoutX="179.0" layoutY="385.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Cadastre seu email aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textSenha2" alignment="CENTER" layoutX="179.0" layoutY="427.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Cadastre sua senha aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textMatricula" alignment="CENTER" layoutX="179.0" layoutY="469.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Informe seu número de matricula" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textInstituicao" alignment="CENTER" layoutX="179.0" layoutY="511.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira a Instituição onde você estuda" />
+               </tooltip>
+            </TextField>
+         </children>
+      </Group>
+      <Group fx:id="groupCLT" visible="false">
+         <children>
+            <ImageView fx:id="backgroundCLT" fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundCadastroCLT.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="textNomeCLT" alignment="CENTER" layoutX="179.0" layoutY="178.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu nome completo aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textNascimentoCLT" alignment="CENTER" layoutX="179.0" layoutY="218.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira sua data de nascimento aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textCPFCLT" alignment="CENTER" layoutX="179.0" layoutY="259.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Informe seu CPF aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textEnderecoCLT" alignment="CENTER" layoutX="179.0" layoutY="300.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu endereço (Bairro, Rua, Nº)" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textTelefoneCLT" alignment="CENTER" layoutX="179.0" layoutY="341.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu número de telefone aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textEmailCLT" alignment="CENTER" layoutX="179.0" layoutY="383.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Cadastre seu email aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textSenhaCLT" alignment="CENTER" layoutX="179.0" layoutY="425.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Cadastre sua senha aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textRGCLT" alignment="CENTER" layoutX="179.0" layoutY="467.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Informe seu RG aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textCTPSCLT" alignment="CENTER" layoutX="179.0" layoutY="509.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Informe o número da sua CTPS" />
+               </tooltip>
+            </TextField>
+         </children>
+      </Group>
+      <Group fx:id="groupIDOSO" visible="false">
+         <children>
+            <ImageView fx:id="backgroundIDOSO" fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundCadastroIdoso.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="textNomeIDOSO" alignment="CENTER" layoutX="179.0" layoutY="203.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu nome completo aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textNascimentoIDOSO" alignment="CENTER" layoutX="179.0" layoutY="243.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira sua data de nascimento aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textCPFIDOSO" alignment="CENTER" layoutX="179.0" layoutY="284.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Informe seu CPF aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textEnderecoIDOSO" alignment="CENTER" layoutX="179.0" layoutY="325.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu endereço (Bairro, Rua, Nº)" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textTelefoneIDOSO" alignment="CENTER" layoutX="179.0" layoutY="366.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu número de telefone aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textEmailIDOSO" alignment="CENTER" layoutX="179.0" layoutY="408.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Cadastre seu email aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textSenhaIDOSO" alignment="CENTER" layoutX="179.0" layoutY="450.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Cadastre sua senha aqui" />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="textRGIDOSO" alignment="CENTER" layoutX="179.0" layoutY="492.0" prefHeight="25.0" prefWidth="207.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Informe seu RG aqui" />
+               </tooltip>
+            </TextField>
+         </children>
+      </Group>
+      <ImageView fx:id="botaoCadastrar" fitHeight="32.0" fitWidth="148.0" layoutX="161.0" layoutY="568.0" onMouseClicked="#clicouBotaoCadastrar" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/botaoCadastrar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Group fx:id="groupCadastro01" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundCadastro01.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="passeIdoso" fitHeight="118.0" fitWidth="185.0" layoutX="239.0" layoutY="292.0" onMouseClicked="#clickIdoso" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Idoso.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="passeCLT" fitHeight="118.0" fitWidth="184.0" layoutX="143.0" layoutY="419.0" onMouseClicked="#clickCLT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/PasseCLT.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="PasseEstudante" fitHeight="118.0" fitWidth="185.0" layoutX="45.0" layoutY="292.0" onMouseClicked="#ClickEstudante" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/PasseEstudante.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="groupInicialScreen">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundInicial.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="botaoCadastro" fitHeight="32.0" fitWidth="171.0" layoutX="149.0" layoutY="539.0" onMouseClicked="#clickCadastro" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoCadastro.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="botaoLogin" fitHeight="32.0" fitWidth="114.0" layoutX="178.0" layoutY="432.0" onMouseClicked="#clickLogin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoLogin.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="textUsuario" alignment="CENTER" layoutX="126.0" layoutY="319.0" prefHeight="25.0" prefWidth="215.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu email aqui" />
+               </tooltip>
+            </TextField>
+            <PasswordField fx:id="pwdFSenha" alignment="CENTER" layoutX="126.0" layoutY="390.0" prefHeight="25.0" prefWidth="210.0" stylesheets="@styles.css">
+               <tooltip>
+                  <Tooltip text="Insira sua senha aqui" />
+               </tooltip>
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="textSenha" alignment="CENTER" layoutX="126.0" layoutY="390.0" prefHeight="25.0" prefWidth="210.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Insira seu email aqui" />
+               </tooltip>
+            </TextField>
+            <ImageView fx:id="imgSeePassword" fitHeight="24.0" fitWidth="24.0" layoutX="336.0" layoutY="391.0" onMouseClicked="#OnClick" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="botaoFuncionario" fitHeight="36.0" fitWidth="36.0" layoutX="387.0" layoutY="42.0" onMouseClicked="#funcionarioMode" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../assets/botaoFuncionario.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="IMGmodofuncionario" fitHeight="27.0" fitWidth="141.0" layoutX="159.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../assets/modofuncionario.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="groupCliente" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundCliente.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../assets/backgroundCliente.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="botaoConsultarDados" fitHeight="41.0" fitWidth="227.0" layoutX="119.0" layoutY="369.0" onMouseClicked="#consultarDados" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoConsultarDados.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="botaoConsultarRotas" fitHeight="41.0" fitWidth="227.0" layoutX="119.0" layoutY="423.0" onMouseClicked="#consultarRotas" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoConsultarRotas.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="nomeUsuario" alignment="CENTER" layoutX="67.0" layoutY="190.0" prefHeight="54.0" prefWidth="338.0" textFill="#0099ff">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="botaoRecarregar" fitHeight="41.0" fitWidth="227.0" layoutX="119.0" layoutY="479.0" onMouseClicked="#recarregar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoRecarregar.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="textOperacao" fitHeight="25.0" fitWidth="279.0" layoutX="97.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/escolhaOperacao.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="saldoIMG" fitHeight="36.0" fitWidth="114.0" layoutX="104.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/saldo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="saldoCliente" layoutX="228.0" layoutY="237.0" prefHeight="36.0" prefWidth="153.0" text="R$ 0,00" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="grupoRotas" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundCliente.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tbwRotas" layoutX="39.0" layoutY="174.0" prefHeight="384.0" prefWidth="393.0" stylesheets="@styles.css">
+              <columns>
+                <TableColumn fx:id="codRota" editable="false" prefWidth="51.0" resizable="false" sortable="false" text="ID Rota" />
+                <TableColumn fx:id="pSaida" editable="false" prefWidth="110.0" resizable="false" sortable="false" text="Ponto Saída" />
+                  <TableColumn fx:id="pChegada" editable="false" prefWidth="110.0" resizable="false" sortable="false" text="Ponto Chegada" />
+                  <TableColumn fx:id="hour" editable="false" prefWidth="60.0" resizable="false" text="Partida" />
+                  <TableColumn fx:id="hour1" editable="false" prefWidth="60.0" resizable="false" text="Chegada" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </Group>
+      <Group fx:id="groupConsultaDados" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundConsultarDados.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="consultaNome" alignment="CENTER" layoutX="174.0" layoutY="127.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaNascimento" alignment="CENTER" layoutX="174.0" layoutY="164.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaCPF" alignment="CENTER" layoutX="174.0" layoutY="201.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaIndereco" alignment="CENTER" layoutX="174.0" layoutY="238.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaTelefone" alignment="CENTER" layoutX="174.0" layoutY="275.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaEmail" alignment="CENTER" layoutX="174.0" layoutY="312.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaSenha" alignment="CENTER" layoutX="174.0" layoutY="351.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaMatricula" alignment="CENTER" layoutX="173.0" layoutY="427.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaInstituicao" alignment="CENTER" layoutX="173.0" layoutY="465.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaRG" alignment="CENTER" layoutX="173.0" layoutY="504.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaCTPS" alignment="CENTER" layoutX="173.0" layoutY="545.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultaCartao" alignment="CENTER" layoutX="174.0" layoutY="389.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="groupRecarga" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundRecarga.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="botaoRecarregou" fitHeight="37.0" fitWidth="171.0" layoutX="147.0" layoutY="398.0" onMouseClicked="#clickRecarregou" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoRecarregarValor.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="valorRecarga" layoutX="138.0" layoutY="343.0" prefHeight="32.0" prefWidth="197.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Group>
+      <Group fx:id="groupFuncionario" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundFuncionario.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="textOperacaoFuncionario" fitHeight="25.0" fitWidth="279.0" layoutX="96.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/escolhaOperacao.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="botaoBuscarCliente" fitHeight="38.0" fitWidth="244.0" layoutX="130.0" layoutY="324.0" onMouseClicked="#buscarCliente" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoBuscarCliente.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="botaoListarClientes" fitHeight="38.0" fitWidth="244.0" layoutX="130.0" layoutY="368.0" onMouseClicked="#listarClientes" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoListarClientes.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="botaoGerenciarCliente" fitHeight="38.0" fitWidth="244.0" layoutX="130.0" layoutY="413.0" onMouseClicked="#gerenciarCliente" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoGerenciarCliente.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="botaoBuscarRota" fitHeight="38.0" fitWidth="244.0" layoutX="130.0" layoutY="457.0" onMouseClicked="#buscarRota" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoBuscarRota.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="botaoGerenciarRotas" fitHeight="38.0" fitWidth="244.0" layoutX="130.0" layoutY="503.0" onMouseClicked="#gerenciarRotas" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoGerenciarRotas.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="groupBuscarCliente" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundBuscarCliente.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tbwClientes1" layoutX="31.0" layoutY="316.0" prefHeight="97.0" prefWidth="406.0" stylesheets="@styles.css">
+               <columns>
+                  <TableColumn fx:id="tNome" editable="false" prefWidth="99.0" resizable="false" sortable="false" text="Nome" />
+                  <TableColumn fx:id="tCpf" editable="false" prefWidth="79.0" resizable="false" sortable="false" text="CPF" />
+                  <TableColumn fx:id="tEmail" editable="false" prefWidth="133.0" resizable="false" sortable="false" text="E-mail" />
+                  <TableColumn fx:id="tTelefone" editable="false" prefWidth="94.0" resizable="false" text="Telefone" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <TableView fx:id="tbwClientes2" layoutX="31.0" layoutY="432.0" prefHeight="97.0" prefWidth="406.0" stylesheets="@styles.css">
+               <columns>
+                  <TableColumn fx:id="tSenha" editable="false" prefWidth="163.0" resizable="false" sortable="false" text="Senha" />
+                  <TableColumn fx:id="tPasse" editable="false" prefWidth="104.0" resizable="false" sortable="false" text="Tipo de Passe" />
+                  <TableColumn fx:id="tEndereco" editable="false" prefWidth="138.0" resizable="false" text="Endereço" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <ImageView fx:id="botaoBuscar" fitHeight="20.0" fitWidth="18.0" layoutX="354.0" layoutY="236.0" onMouseClicked="#buscarCpfCliente" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/lupa.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="funcionarIoBuscarCliente" layoutX="95.0" layoutY="227.0" prefHeight="37.0" prefWidth="253.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Group>
+      <Group fx:id="groupGerenciarCliente" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundGerenciarCliente.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="editarNome" layoutX="163.0" layoutY="287.0" prefHeight="16.0" prefWidth="149.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="editarEndereco" layoutX="163.0" layoutY="397.0" prefHeight="16.0" prefWidth="149.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="editarTelefone" layoutX="163.0" layoutY="446.0" prefHeight="16.0" prefWidth="149.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="editarEmail" layoutX="163.0" layoutY="500.0" prefHeight="16.0" prefWidth="149.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="editarSenha" layoutX="163.0" layoutY="341.0" prefHeight="16.0" prefWidth="149.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="botaoSalvar" fitHeight="27.0" fitWidth="118.0" layoutX="176.0" layoutY="541.0" onMouseClicked="#salvarDadosEditados" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoSalvar.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="funcionarIoEditarCliente" layoutX="138.0" layoutY="166.0" prefHeight="25.0" prefWidth="198.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Group>
+      <Group fx:id="groupBuscarRotas" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundBuscarROT.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tbwRotasCadastradas" layoutX="39.0" layoutY="224.0" prefHeight="343.0" prefWidth="390.0" stylesheets="@styles.css">
+               <columns>
+                  <TableColumn fx:id="idRota" editable="false" prefWidth="51.0" resizable="false" sortable="false" text="ID Rota" />
+                  <TableColumn fx:id="pontoSaida" editable="false" prefWidth="85.0" resizable="false" sortable="false" text="Ponto Saída" />
+                  <TableColumn fx:id="pontoChegada" editable="false" prefWidth="110.0" resizable="false" sortable="false" text="Ponto Chegada" />
+                  <TableColumn fx:id="saida" editable="false" prefWidth="65.0" resizable="false" text="Partida" />
+                  <TableColumn fx:id="chegada" editable="false" resizable="false" text="Chegada" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </Group>
+      <Group fx:id="groupCadastrarRotas" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundCadastrarROTAS.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="botaoCadastrarRotas" fitHeight="32.0" fitWidth="148.0" layoutX="161.0" layoutY="526.0" onMouseClicked="#clickBotaoCadastrarRotas" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/botaoCadastrar.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="cadRotaID" layoutX="151.0" layoutY="222.0" prefHeight="25.0" prefWidth="171.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="cadRotaPartida" layoutX="151.0" layoutY="285.0" prefHeight="25.0" prefWidth="171.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="cadRotaChegada" layoutX="151.0" layoutY="346.0" prefHeight="25.0" prefWidth="171.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="cadRotahSaida" layoutX="151.0" layoutY="409.0" prefHeight="25.0" prefWidth="171.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="cadRotahChegada" layoutX="151.0" layoutY="471.0" prefHeight="25.0" prefWidth="171.0" stylesheets="@styles.css">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="12.0" />
+               </font></TextField>
+         </children>
+      </Group>
+      <Group fx:id="groupClientesCadastrados" visible="false">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/backgroundListarClientes.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tbwClientes" layoutX="38.0" layoutY="191.0" prefHeight="361.0" prefWidth="393.0" stylesheets="@styles.css">
+               <columns>
+                  <TableColumn fx:id="tableNome" editable="false" prefWidth="132.0" resizable="false" sortable="false" text="Nome" />
+                  <TableColumn fx:id="tableCPF" editable="false" prefWidth="104.0" resizable="false" sortable="false" text="CPF" />
+                  <TableColumn fx:id="tableTelefone" editable="false" prefWidth="102.0" resizable="false" sortable="false" text="Telefone" />
+                  <TableColumn fx:id="tablePasse" editable="false" prefWidth="54.0" resizable="false" text="Passe" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </Group>
+      <ImageView fx:id="botaoVoltar" fitHeight="36.0" fitWidth="50.0" layoutX="217.0" layoutY="582.0" onMouseClicked="#botaoVoltar" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/botaoVoltar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="homeButton" fitHeight="36.0" fitWidth="36.0" layoutX="36.0" layoutY="33.0" onMouseClicked="#clickHomeButton" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/homeButton.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
